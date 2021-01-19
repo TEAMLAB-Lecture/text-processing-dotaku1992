@@ -33,8 +33,11 @@ def normalize(input_string):
              >>> tp.normalize(input_string2)
              'extra space'
     """
-    normalized_string = None
-    return normalized_string
+
+
+
+    normalized_string = ' '.join(input_string.split())
+    return normalized_string.lower()
 
 
 def no_vowels(input_string):
@@ -58,5 +61,9 @@ def no_vowels(input_string):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    no_vowel_string = None
+    vowel_list = "aeiouAEIOU"
+    no_vowel_string =""
+    for c in input_string:
+        if c not in vowel_list:
+            no_vowel_string+=c   # c++랑 달리 string에서 push 역할을 하는 append가 없다.
     return no_vowel_string
