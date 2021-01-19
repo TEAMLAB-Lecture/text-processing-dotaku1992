@@ -61,9 +61,9 @@ def no_vowels(input_string):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    vowel_list = "aeiouAEIOU"
+    vowel_lists = "aeiouAEIOU"
     no_vowel_string =""
     for c in input_string:
-        if c not in vowel_list:
+        if c not in vowel_lists:
             no_vowel_string+=c   # c++랑 달리 string에서 push 역할을 하는 append가 없다.
     return no_vowel_string
